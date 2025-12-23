@@ -1,0 +1,37 @@
+{
+  "name": "sol-bounties-api",
+  "version": "0.1.0",
+  "description": "API para la plataforma gamificada Sol Bounties construida con NestJS",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "start:prod": "node dist/main.js",
+    "prestart:prod": "npm run build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^3.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/mapped-types": "^2.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^5.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1",
+    "tweetnacl": "^1.0.3",
+    "typeorm": "^0.3.28",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@nestjs/schematics": "^10.0.0",
+    "typescript": "^5.1.6"
+  }
+}
