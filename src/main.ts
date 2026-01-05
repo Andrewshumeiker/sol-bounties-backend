@@ -27,8 +27,11 @@ async function bootstrap() {
       return cb(new Error('Not allowed by CORS'), false);
     },
     credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
+    credentials: true,
     methods: ['GET','POST','PUT','PATCH','DELETE','OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
   });
 
   const port = process.env.PORT ? Number(process.env.PORT) : 3001;
